@@ -1,13 +1,13 @@
 #include<QApplication>
 
-#include <Python.h>
-#undef B0 // http://stackoverflow.com/questions/15078060/embedding-python-in-qt-5
+// #include <Python.h>
+// #undef B0 // http://stackoverflow.com/questions/15078060/embedding-python-in-qt-5
 
 #include "MainWindow.h"
 
 int main(int argc, char *argv[])
 {
-    Py_Initialize();
+    // Py_Initialize();
 
     QApplication app(argc, argv);
     MainWindow window;
