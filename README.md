@@ -12,3 +12,4 @@ qt cpp with py and pyqt for scripting.
 ## notes
 
 - calling c++ functions from python: <https://docs.python.org/3/extending/embedding.html>
+- embedding a python shell: <https://github.com/oglops/pyshell/blob/master/pyshell.py>
