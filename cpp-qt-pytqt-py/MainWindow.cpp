@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     PyObject *obj = Py_BuildValue("s", "test.py");
     FILE *file = _Py_fopen_obj(obj, "r+");
     if(file != NULL) {
-        PyRun_SimpleFile(file, "test.py");
+        PyRun_SimpleFile(file, "../python/test.py");
     } else {
         qDebug() << "file test.py not found (did you copy it in the build directory";
     }

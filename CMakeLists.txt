@@ -19,14 +19,7 @@ FIND_PACKAGE(Qt5Widgets REQUIRED)
 find_package(PythonLibs REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 
-ADD_EXECUTABLE (cpp-qt-pyqt-py
-    main.cpp
-    MainWindow.cpp
-)
+ADD_SUBDIRECTORY(cpp-qt-pytqt-py)
 
-TARGET_LINK_LIBRARIES(cpp-qt-pyqt-py
-    ${PYTHON_LIBRARIES}
-    Qt5::Widgets
-)
 
-configure_file(test.py test.py COPYONLY)
+configure_file(python/test.py python/test.py COPYONLY)
